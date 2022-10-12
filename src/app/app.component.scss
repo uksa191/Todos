@@ -1,0 +1,49 @@
+:host {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+.search {
+  &-input {
+    max-width: 200px;
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    padding: 1rem 1.5rem;
+    border-radius: 1.75rem;
+    border: 1px solid #afafaf;
+    outline: none;
+  }
+  &-btn {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    padding: 1rem 1.5rem;
+    border-radius: 1.75rem;
+    background-color: lightblue;
+  }
+  &-not-found{
+    line-height: 2rem;
+    color: red;
+  }
+}
+.search-input:focus {
+  border: 1px solid lightblue;
+  box-shadow: 0 0 7px 0 lightblue;
+}
+table,
+td,
+th {
+  border: 1px solid gray;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+}
+th {
+  background-color: black;
+  color: white;
+}
+td {
+  min-width: 100px;
+}
